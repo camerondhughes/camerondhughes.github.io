@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branches</title>
+    <link rel="stylesheet" href="branches.css"> 
+</head>
+<body>
+    <div class="tree">
+        <div class="leaves"></div> 
+        <div class="leaf leaf1"></div>
+        <div class="leaf leaf2"></div>
+        <div class="leaf4"></div>
+    </div>
+    <div id="cloak-el" class="cloak"></div>
+    <h1>Branches</h1>
+    <h2 id="keyword-el">Your key word is + key</h2>
+    <input class = "text box" type="text" id = "inputAnswer" placeholder="">
+    <h4 id="number-el">0/0</h4>
+    <h5 id="win-el"></h5>
+    <div id="winScreenPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <h6>Congratulations!</h6>
+            <h7 id="totalGuess">Total Guesses: + totalGuess</h7>
+            <h8 id="totalTime">Total Time: + totalTime</h8>
+        </div>
+    </div>
+
+    <script src="branches.js"></script>
+</body>
+</html>
