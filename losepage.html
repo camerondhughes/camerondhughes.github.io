@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>You Lose</title>
+ <style>
+   html, body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     background-color: #ff0000; /* stoplight red */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: Arial, sans-serif;
+     text-align: center;
+   }
 
+
+   h1, #loseMessage {
+     font-size: 5rem; /* Same size as the "You Lose" text */
+     color: white;
+     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+   }
+
+
+   /* Optional: If you want to add a little space between "You Lose" and the message */
+   #loseMessage {
+     margin-top: 20px; /* Adds space below the "You Lose" text */
+   }
+ </style>
+
+
+ <script>
+   // Wait for the page to load before retrieving the correct answer
+   window.onload = function() {
+     // Retrieve the correct answer from localStorage
+     const correctAnswer = localStorage.getItem('correctAnswer');
+
+
+     // If the correct answer exists, update the message on the page
+     if (correctAnswer) {
+       const message = "The correct answer was " + correctAnswer;
+       document.getElementById('loseMessage').textContent = message;
+     }
+   };
+
+
+   // Redirect to index.html after 5 seconds
+   setTimeout(function() {
+     window.location.href = "index.html";
+   }, 3000);
+ </script>
+</head>
+<body>
+ <div>
+   <h1>You Lose</h1>
+   <p id="loseMessage"></p> <!-- This is where the message will go -->
+ </div>
+</body>
+</html>
