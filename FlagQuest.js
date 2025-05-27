@@ -1,5 +1,3 @@
-
-
 // Add event listener to the button
 
 
@@ -566,6 +564,11 @@ italyFlag.classList.add("italy-flag");
 italyFlag.style.display = "block";
 
 
+const ivoryCoastFlag = document.createElement("div");
+ivoryCoastFlag.classList.add("ivoryCoast-flag");
+ivoryCoastFlag.style.display = "block";
+
+
 const jamaicaFlag = document.createElement("div");
 jamaicaFlag.classList.add("jamaica-flag");
 jamaicaFlag.style.display = "block";
@@ -811,17 +814,9 @@ pakistanFlag.classList.add("pakistan-flag");
 pakistanFlag.style.display = "block";
 
 
-// start here
-
-
 const palauFlag = document.createElement("div");
 palauFlag.classList.add("palau-flag");
 palauFlag.style.display = "block";
-
-
-const palestineFlag = document.createElement("div");
-palestineFlag.classList.add("palestine-flag");
-palestineFlag.style.display = "block";
 
 
 const panamaFlag = document.createElement("div");
@@ -949,9 +944,6 @@ sloveniaFlag.classList.add("slovenia-flag");
 sloveniaFlag.style.display = "block";
 
 
-//
-
-
 const solomonIslandsFlag = document.createElement("div");
 solomonIslandsFlag.classList.add("solomonIslands-flag");
 solomonIslandsFlag.style.display = "block";
@@ -1035,9 +1027,6 @@ togoFlag.style.display = "block";
 const tongaFlag = document.createElement("div");
 tongaFlag.classList.add("tonga-flag");
 tongaFlag.style.display = "block";
-
-
-//
 
 
 const trinidadAndTobagoFlag = document.createElement("div");
@@ -1145,13 +1134,13 @@ let colors = [blackSquare, whiteSquare, blueSquare, greenSquare,
    finlandFlag, franceFlag, gabonFlag, gambiaFlag, georgiaFlag, germanyFlag, ghanaFlag,
    greeceFlag, grenadaFlag, guatemalaFlag, guineaFlag, guineaBissauFlag, guyanaFlag,
    haitiFlag, hondurasFlag, hungaryFlag, icelandFlag, indiaFlag, indonesiaFlag, iranFlag,
-   iraqFlag, irelandFlag, israelFlag, italyFlag, jamaicaFlag, japanFlag, jordanFlag, kazakhstanFlag, kenyaFlag, kiribatiFlag, northKoreaFlag, southKoreaFlag, kuwaitFlag,
+   iraqFlag, irelandFlag, israelFlag, italyFlag, ivoryCoastFlag, jamaicaFlag, japanFlag, jordanFlag, kazakhstanFlag, kenyaFlag, kiribatiFlag, northKoreaFlag, southKoreaFlag, kuwaitFlag,
    kyrgyzstanFlag, laosFlag, latviaFlag, lebanonFlag, lesothoFlag, liberiaFlag, libyaFlag, liechtensteinFlag,
    lithuaniaFlag, luxembourgFlag, madagascarFlag, malawiFlag, malaysiaFlag, maldivesFlag,
    maliFlag, maltaFlag, marshallIslandsFlag, mauritaniaFlag, mauritiusFlag, mexicoFlag, micronesiaFlag, moldovaFlag, monacoFlag, mongoliaFlag, montenegroFlag, moroccoFlag,
    mozambiqueFlag, myanmarFlag, namibiaFlag, nauruFlag, nepalFlag, netherlandsFlag,
    newZealandFlag, nicaraguaFlag, nigerFlag, nigeriaFlag, northMacedoniaFlag, norwayFlag,
-   omanFlag, pakistanFlag, palauFlag, palestineFlag, panamaFlag, papuaNewGuineaFlag,
+   omanFlag, pakistanFlag, palauFlag, panamaFlag, papuaNewGuineaFlag,
    paraguayFlag, peruFlag, philippinesFlag, polandFlag, portugalFlag, qatarFlag,
    romaniaFlag, russiaFlag, rwandaFlag, saintKittsAndNevisFlag, saintLuciaFlag,
    saintVincentAndTheGrenadinesFlag, samoaFlag, sanMarinoFlag, saoTomeAndPrincipeFlag,
@@ -1166,9 +1155,10 @@ let colors = [blackSquare, whiteSquare, blueSquare, greenSquare,
 
 
 
-/* azerbaijain = 10; bolivia = 20; cameroon = 30; croatia = 40; egypt = 50;
-   gabon = 60; guyana = 70; israel = 80; kuwait = 90; luxembourg = 100
-   mexico = 110; nauru = 120; pakistan = 130; qatar = 140;
+/*  For just these lists below, not the arrays
+   azerbaijain = 10; bolivia = 20; cameroon = 30; croatia = 40; egypt = 50;
+   gabon = 60; guyana = 70; israel = 80; kuwait = 91; luxembourg = 101
+   mexico = 111; nauru = 121; pakistan = 131; qatar = 140;
    saudi arabia = 150; south africa = 160; tanzania = 170;
    uganda = 180; yemen = 190*/
 
@@ -1419,157 +1409,157 @@ let israel = [1, 2, 99, 17];
 let italy = [3, 1, 4, 100, 17];
 
 
-let jamaica = [3, 0, 5, 101, 17];
+let ivoryCoast = [7, 1, 3, 101, 17];
 
 
-let japan = [1, 4, 102, 17];
+let jamaica = [3, 0, 5, 102, 17];
 
 
-let jordan = [13, 0, 1, 3, 103, 17];
+let japan = [1, 4, 103, 17];
 
 
-let kazakhstan = [14, 5, 104, 17];
+let jordan = [13, 0, 1, 3, 104, 17];
 
 
-let kenya = [13, 0, 3, 1, 105, 17];
+let kazakhstan = [14, 5, 105, 17];
 
 
-let kiribati = [13, 2, 1 ,5, 106, 17];
+let kenya = [13, 0, 3, 1, 106, 17];
 
 
-let northKorea = [4, 2, 1, 107, 17];
+let kiribati = [13, 2, 1 ,5, 107, 17];
 
 
-let southKorea = [1, 2, 4, 0, 108, 17];
+let northKorea = [4, 2, 1, 108, 17];
 
 
-let kuwait = [3, 1, 13, 0, 109, 17];
+let southKorea = [1, 2, 4, 0, 109, 17];
 
 
-let kyrgyzstan = [4, 5, 110, 17];
+let kuwait = [3, 1, 13, 0, 110, 17];
 
 
-let laos = [2, 4, 1, 111, 17];
+let kyrgyzstan = [4, 5, 111, 17];
 
 
-let latvia = [9, 1, 112, 17];
+let laos = [2, 4, 1, 112, 17];
 
 
-let lebanon = [4, 1, 3, 113, 17];
+let latvia = [9, 1, 113, 17];
 
 
-let lesotho = [1, 2, 3, 0, 114, 17];
+let lebanon = [4, 1, 3, 114, 17];
 
 
-let liberia = [4, 1, 2, 115, 17];
+let lesotho = [1, 2, 3, 0, 115, 17];
 
 
-let libya = [0, 13, 3, 1, 116, 17];
+let liberia = [4, 1, 2, 116, 17];
 
 
-let liechtenstein = [2, 13, 5, 117, 17];
+let libya = [0, 13, 3, 1, 117, 17];
 
 
-let lithuania = [5, 3, 4, 118, 17];
+let liechtenstein = [2, 13, 5, 118, 17];
 
 
-let luxembourg = [4, 1, 6, 119, 17];
+let lithuania = [5, 3, 4, 119, 17];
 
 
-let madagascar = [1, 4, 3, 120, 17];
+let luxembourg = [4, 1, 6, 120, 17];
 
 
-let malawi = [13, 0, 3, 121, 17];
+let madagascar = [1, 4, 3, 121, 17];
 
 
-let malaysia = [4, 1, 2, 5, 122, 17];
+let malawi = [13, 0, 3, 122, 17];
 
 
-let maldives = [4, 3, 1, 123, 17];
+let malaysia = [4, 1, 2, 5, 123, 17];
 
 
-let mali = [11, 5, 4, 124, 17];
+let maldives = [4, 3, 1, 124, 17];
 
 
-let malta = [1, 4, 15, 125, 17];
+let mali = [11, 5, 4, 125, 17];
 
 
-let marshallIslands = [2, 1, 7, 126, 17];
+let malta = [1, 4, 15, 126, 17];
 
 
-let mauritania = [11, 5, 13, 127, 17];
+let marshallIslands = [2, 1, 7, 127, 17];
 
 
-let mauritius = [4, 2, 5, 11, 128, 17];
+let mauritania = [11, 5, 13, 128, 17];
 
 
-let mexico = [3, 1, 4, 16, 8, 11, 5, 129, 17];
+let mauritius = [4, 2, 5, 11, 129, 17];
 
 
-let micronesia = [6, 1, 130, 17];
+let mexico = [3, 1, 4, 16, 8, 11, 5, 130, 17];
 
 
-let moldova = [4, 5, 2, 131, 17];
+let micronesia = [6, 1, 131, 17];
 
 
-let monaco = [13, 1, 132, 17];
+let moldova = [4, 5, 2, 132, 17];
 
 
-let mongolia = [4, 5, 8, 133, 17];
+let monaco = [13, 1, 133, 17];
 
 
-let montenegro = [4, 10, 2, 11, 134, 17];
+let mongolia = [4, 5, 8, 134, 17];
 
 
-let morocco = [4, 3, 135, 17];
+let montenegro = [4, 10, 2, 11, 135, 17];
 
 
-let mozambique = [5, 3, 0, 4, 1, 136, 17];
+let morocco = [4, 3, 136, 17];
 
 
-let myanmar = [5, 4, 11, 137, 17];
+let mozambique = [5, 3, 0, 4, 1, 137, 17];
 
 
-let namibia = [2, 5, 4, 3, 1, 138, 17];
+let myanmar = [5, 4, 11, 138, 17];
 
 
-let nauru = [2, 5, 1, 139, 17];
+let namibia = [2, 5, 4, 3, 1, 139, 17];
 
 
-let nepal = [4, 2, 1, 140, 17];
+let nauru = [2, 5, 1, 140, 17];
 
 
-let netherlands = [4, 1, 2, 141, 17];
+let nepal = [4, 2, 1, 141, 17];
 
 
-let newZealand = [4, 2, 1, 142, 17];
+let netherlands = [4, 1, 2, 142, 17];
 
 
-let nicaragua = [2, 1, 10, 4, 11, 143, 17];
+let newZealand = [4, 2, 1, 143, 17];
 
 
-let niger = [7, 1, 11, 144, 17];
+let nicaragua = [2, 1, 10, 4, 11, 144, 17];
 
 
-let nigeria = [3, 1, 145, 17];
+let niger = [7, 1, 11, 145, 17];
 
 
-let northMacedonia = [4, 5, 146, 17];
+let nigeria = [3, 1, 146, 17];
 
 
-let norway = [13, 2, 1, 147, 17];
+let northMacedonia = [4, 5, 147, 17];
 
 
-let oman = [4, 1, 3, 148, 17];
+let norway = [13, 2, 1, 148, 17];
 
 
-let pakistan = [12, 1, 149, 17];
+let oman = [4, 1, 3, 149, 17];
 
 
-let palau = [6, 5, 150, 17];
+let pakistan = [12, 1, 150, 17];
 
 
-let palestine = [0, 1, 3, 4, 151, 17];
+let palau = [6, 5, 151, 17];
 
 
 let panama = [4, 2, 1, 152, 17];
@@ -1578,10 +1568,10 @@ let panama = [4, 2, 1, 152, 17];
 let papuaNewGuinea = [0, 13, 5, 3, 153, 17];
 
 
-let paraguay = [4, 1, 2, 5, 3, 0, 154, 17];
+let paraguay = [4, 2, 1, 5, 3, 0, 154, 17];
 
 
-let peru = [4, 1, 155, 17];
+let peru = [4, 1, 3, 5, 7, 6, 16, 155, 17];
 
 
 let philippines = [2, 4, 1, 5, 156, 17];
@@ -1668,7 +1658,7 @@ let sriLanka = [9, 5, 12, 7, 182, 17];
 let sudan = [13, 1, 0, 3, 183, 17];
 
 
-let suriname = [3, 4, 5, 1, 184, 17];
+let suriname = [4, 3, 5, 1, 184, 17];
 
 
 let sweden = [2, 5, 185, 17];
@@ -1834,6 +1824,7 @@ let Iraq = "Iraq";
 let Ireland = "Ireland";
 let Israel = "Israel";
 let Italy = "Italy";
+let IvoryCoast = "Ivory Coast";
 let Jamaica = "Jamaica";
 let Japan = "Japan";
 let Jordan = "Jordan";
@@ -1884,7 +1875,6 @@ let Norway = "Norway";
 let Oman = "Oman";
 let Pakistan = "Pakistan";
 let Palau = "Palau";
-let Palestine = "Palestine";
 let Panama = "Panama";
 let PapuaNewGuinea = "Papua New Guinea";
 let Paraguay = "Paraguay";
@@ -1947,75 +1937,167 @@ let Zambia = "Zambia";
 let Zimbabwe = "Zimbabwe";
 
 
+let countries = [
+   //Africa (54)
+   algeria, angola, benin, botswana, burkinaFaso, burundi, caboVerde, cameroon, centralAfricanRepublic, chad,
+   comoros, congo, democraticRepublicOfTheCongo, djibouti, egypt, equatorialGuinea, eritrea, eswatini,
+   ethiopia, gabon, gambia, ghana, guinea, guineaBissau, ivoryCoast, kenya, lesotho, liberia, libya, madagascar, malawi,
+   mali, mauritania, mauritius, morocco, mozambique, namibia, niger, nigeria, rwanda, saoTomeAndPrincipe, senegal,
+   seychelles, sierraLeone, somalia, southAfrica, southSudan, sudan, tanzania, togo, tunisia, uganda, zambia, zimbabwe,
+  
+  
+   //Europe (45)
+   albania, andorra, austria, belarus, belgium, bosniaAndHerzegovina, bulgaria, croatia, cyprus,
+   czechRepublic, denmark, estonia, finland, france, germany, greece, hungary, iceland, ireland,
+   italy, latvia, liechtenstein, lithuania, luxembourg, malta, moldova, monaco, montenegro,
+   netherlands, northMacedonia, norway, poland, portugal, romania, russia, sanMarino, serbia,
+   slovakia, slovenia, spain, sweden, switzerland, turkey, ukraine, unitedKingdom,
+  
+  
+   //Americas (22)
+   argentina, belize, bolivia, brazil, canada, chile, colombia, costaRica, ecuador, elSalvador,
+   guatemala, guyana, honduras, mexico, nicaragua, panama, paraguay, peru, suriname, unitedStates,
+   uruguay, venezuela,
+  
+  
+   //Asia (45)
+   afghanistan, armenia, bahrain, bangladesh, bhutan, brunei, cambodia, china, georgia, india, indonesia, iran,
+   iraq, israel, japan, jordan, kazakhstan, kiribati, kuwait, kyrgyzstan, laos, lebanon, malaysia,
+   maldives, mongolia, myanmar, nepal, northKorea, oman, pakistan,
+   philippines, qatar, saudiArabia, singapore, southKorea, sriLanka, syria, tajikistan, thailand,
+   timorLeste, turkmenistan, unitedArabEmirates, uzbekistan, vietnam, yemen,
+  
+  
+   //Caribbean (13)
+   antiguaAndBarbuda, bahamas, barbados, cuba, dominica, dominicanRepublic, grenada, haiti, jamaica,
+   saintKittsAndNevis, saintLucia, saintVincentAndTheGrenadines, trinidadAndTobago,
+  
+  
+   //Oceania (14)
+   australia, fiji, kiribati, marshallIslands, micronesia, nauru, newZealand, palau, papuaNewGuinea, samoa,
+   solomonIslands, tonga, tuvalu, vanuatu
+   ];
+  
+  
+   let countryNames = [
+   //Africa (54)
+   Algeria, Angola, Benin, Botswana, BurkinaFaso, Burundi, CaboVerde, Cameroon, CentralAfricanRepublic, Chad,
+   Comoros, Congo, DemocraticRepublicOfTheCongo, Djibouti, Egypt, EquatorialGuinea, Eritrea, Eswatini,
+   Ethiopia, Gabon, Gambia, Ghana, Guinea, GuineaBissau, IvoryCoast, Kenya, Lesotho, Liberia, Libya, Madagascar, Malawi,
+   Mali, Mauritania, Mauritius, Morocco, Mozambique, Namibia, Niger, Nigeria, Rwanda, SaoTomeAndPrincipe, Senegal,
+   Seychelles, SierraLeone, Somalia, SouthAfrica, SouthSudan, Sudan, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe,
+  
+  
+   //Europe (45)
+   Albania, Andorra, Austria, Belarus, Belgium, BosniaAndHerzegovina, Bulgaria, Croatia, Cyprus,
+   CzechRepublic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland,
+   Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro,
+   Netherlands, NorthMacedonia, Norway, Poland, Portugal, Romania, Russia, SanMarino, Serbia,
+   Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, UnitedKingdom,
+  
+  
+   //Americas (22)
+   Argentina, Belize, Bolivia, Brazil, Canada, Chile, Colombia, CostaRica, Ecuador, ElSalvador,
+   Guatemala, Guyana, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Suriname, UnitedStates,
+   Uruguay, Venezuela,
+  
+  
+   //Asia (45)
+   Afghanistan, Armenia, Bahrain, Bangladesh, Bhutan, Brunei, Cambodia, China, Georgia, India, Indonesia, Iran,
+   Iraq, Israel, Japan, Jordan, Kazakhstan, Kiribati, Kuwait, Kyrgyzstan, Laos, Lebanon, Malaysia,
+   Maldives, Mongolia, Myanmar, Nepal, NorthKorea, Oman, Pakistan,
+   Philippines, Qatar, SaudiArabia, Singapore, SouthKorea, SriLanka, Syria, Tajikistan, Thailand,
+   TimorLeste, Turkmenistan, UnitedArabEmirates, Uzbekistan, Vietnam, Yemen,
+  
+  
+   //Caribbean (13)
+   AntiguaAndBarbuda, Bahamas, Barbados, Cuba, Dominica, DominicanRepublic, Grenada, Haiti, Jamaica,
+   SaintKittsAndNevis, SaintLucia, SaintVincentAndTheGrenadines, TrinidadAndTobago,
+  
+  
+   //Oceania (14)
+   Australia, Fiji, Kiribati, MarshallIslands, Micronesia, Nauru, NewZealand, Palau, PapuaNewGuinea, Samoa,
+   SolomonIslands, Tonga, Tuvalu, Vanuatu
+   ]; 
+  
+// Africa variable
 
 
-let countries = [afghanistan, albania, algeria, andorra, angola, antiguaAndBarbuda,
-   argentina, armenia, australia, austria, azerbaijan, bahamas,
-   bahrain, bangladesh, barbados, belarus, belgium, belize,
-   benin, bhutan, bolivia, bosniaAndHerzegovina, botswana, brazil,
-   brunei, bulgaria, burkinaFaso, burundi, caboVerde, cambodia,
-   cameroon, canada, centralAfricanRepublic, chad, chile, china, colombia, comoros, congo, costaRica, croatia, cuba,
-   cyprus, czechRepublic, democraticRepublicOfTheCongo, denmark,  djibouti, dominica, dominicanRepublic, ecuador, egypt,
-   elSalvador, equatorialGuinea, eritrea, estonia, eswatini, ethiopia, fiji,
-   finland, france, gabon, gambia, georgia, germany, ghana,
-   greece, grenada, guatemala, guinea, guineaBissau, guyana,
-   haiti, honduras, hungary, iceland, india, indonesia, iran,
-   iraq, ireland, israel, italy, jamaica, japan, jordan, kazakhstan, kenya, kiribati, northKorea, southKorea, kuwait,
-   kyrgyzstan, laos, latvia, lebanon, lesotho, liberia, libya, liechtenstein,
-   lithuania, luxembourg, madagascar, malawi, malaysia, maldives,
-   mali, malta, marshallIslands, mauritania, mauritius, mexico, micronesia, moldova, monaco, mongolia, montenegro, morocco,
-   mozambique, myanmar, namibia, nauru, nepal, netherlands,
-   newZealand, nicaragua, niger, nigeria, northMacedonia, norway,
-   oman, pakistan, palau, palestine, panama, papuaNewGuinea,
-   paraguay, peru, philippines, poland, portugal, qatar,
-   romania, russia, rwanda, saintKittsAndNevis, saintLucia,
-   saintVincentAndTheGrenadines, samoa, sanMarino, saoTomeAndPrincipe,
-   saudiArabia, senegal, serbia, seychelles, sierraLeone, singapore,
-   slovakia, slovenia, solomonIslands, somalia, southAfrica, southSudan, spain, sriLanka, sudan, suriname, sweden,
-   switzerland, syria, tajikistan, tanzania, thailand, timorLeste,
-   togo, tonga, trinidadAndTobago, tunisia, turkey, turkmenistan,
-   tuvalu, uganda, ukraine, unitedArabEmirates, unitedKingdom,
-   unitedStates, uruguay, uzbekistan, vanuatu,
-   venezuela, vietnam, yemen, zambia, zimbabwe];
+const africa = localStorage.getItem('africa') === "true";
 
 
-let countryNames = [Afghanistan, Albania, Algeria, Andorra, Angola, AntiguaAndBarbuda,
-   Argentina, Armenia, Australia, Austria, Azerbaijan, Bahamas,
-   Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize,
-   Benin, Bhutan, Bolivia, BosniaAndHerzegovina, Botswana, Brazil,
-   Brunei, Bulgaria, BurkinaFaso, Burundi, CaboVerde, Cambodia,
-   Cameroon, Canada, CentralAfricanRepublic, Chad, Chile, China, Colombia, Comoros, Congo, CostaRica, Croatia, Cuba,
-   Cyprus, CzechRepublic, DemocraticRepublicOfTheCongo, Denmark,  Djibouti, Dominica, DominicanRepublic, Ecuador, Egypt,
-   ElSalvador, EquatorialGuinea, Eritrea, Estonia, Eswatini, Ethiopia, Fiji,
-   Finland, France, Gabon, Gambia, Georgia, Germany, Ghana,
-   Greece, Grenada, Guatemala, Guinea, GuineaBissau, Guyana,
-   Haiti, Honduras, Hungary, Iceland, India, Indonesia, Iran,
-   Iraq, Ireland, Israel, Italy, Jamaica, Japan, Jordan, Kazakhstan, Kenya, Kiribati, NorthKorea, SouthKorea, Kuwait,
-   Kyrgyzstan, Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein,
-   Lithuania, Luxembourg, Madagascar, Malawi, Malaysia, Maldives,
-   Mali, Malta, MarshallIslands, Mauritania, Mauritius, Mexico, Micronesia, Moldova, Monaco, Mongolia, Montenegro, Morocco,
-   Mozambique, Myanmar, Namibia, Nauru, Nepal, Netherlands,
-   NewZealand, Nicaragua, Niger, Nigeria, NorthMacedonia, Norway,
-   Oman, Pakistan, Palau, Palestine, Panama, PapuaNewGuinea,
-   Paraguay, Peru, Philippines, Poland, Portugal, Qatar,
-   Romania, Russia, Rwanda, SaintKittsAndNevis, SaintLucia,
-   SaintVincentAndTheGrenadines, Samoa, SanMarino, SaoTomeAndPrincipe,
-   SaudiArabia, Senegal, Serbia, Seychelles, SierraLeone, Singapore,
-   Slovakia, Slovenia, SolomonIslands, Somalia, SouthAfrica, SouthSudan, Spain, SriLanka, Sudan, Suriname, Sweden,
-   Switzerland, Syria, Tajikistan, Tanzania, Thailand, TimorLeste,
-   Togo, Tonga, TrinidadAndTobago, Tunisia, Turkey, Turkmenistan,
-   Tuvalu, Uganda, Ukraine, UnitedArabEmirates, UnitedKingdom,
-   UnitedStates, Uruguay, Uzbekistan, Vanuatu,
-   Venezuela, Vietnam, Yemen, Zambia, Zimbabwe]
+console.log("Africa (from localStorage):", africa);
 
 
-let randomizer = Math.floor(Math.random() * 193);
+// Europe variable
+
+
+const europe = localStorage.getItem('europe') === "true";
+
+
+console.log("Europe (from localStorage):", europe);
+
+
+// Americas variable
+
+
+const americas = localStorage.getItem('americas') === "true";
+
+
+console.log("Americas (from localStorage):", americas);
+
+
+// Asia variable
+
+
+const asia = localStorage.getItem('asia') === "true";
+
+
+console.log("Asia (from localStorage):", asia);
+
+
+// Caribbean variable
+
+
+const caribbean = localStorage.getItem('caribbean') === "true";
+
+
+console.log("Caribbean (from localStorage):", caribbean);
+
+
+//Oceania variable
+
+
+const oceania = localStorage.getItem('oceania') === "true";
+
+
+console.log("Oceania (from localStorage):", oceania);   
+
+
+let randomizer;
+
+
+do {
+ randomizer = Math.floor(Math.random() * 193);
+} while (
+ (africa && randomizer >= 0 && randomizer <= 53) ||
+ (europe && randomizer >= 54 && randomizer <= 98) ||
+ (americas && randomizer >= 99 && randomizer <= 120) ||
+ (asia && randomizer >= 121 && randomizer <= 165) ||
+ (caribbean && randomizer >= 166 && randomizer <= 178) ||
+ (oceania && randomizer >= 179 && randomizer <= 192)
+);
+
+
+/*randomizer = 116;*/
+
+
+console.log("randomizer:" + randomizer);
 let selectedCountry = countries[randomizer];
 let selectedCountryIndex = countries.indexOf(selectedCountry);
 let selectedNameCountry = countryNames[randomizer].toLowerCase();
 
 
-// Assuming you have the necessary game variables
 const correctAnswer = countryNames[countries.indexOf(selectedCountry)];
 
 
@@ -2036,11 +2118,6 @@ function winGame() {
 function loseGame() {
    window.location.replace("losepage.html");
 }
-
-
-/*setTimeout(function() {
-   window.location.replace("index.html");
-},5000);*/
 
 
 document.getElementById("guessButton").addEventListener("click", function () {
@@ -2070,7 +2147,7 @@ document.getElementById("guessButton").addEventListener("click", function () {
        colors[selectedCountry[counter + 1]].style.left = counter+1+"00px";
    }
    //special message just for Belize
-   if ((colors[selectedCountry[counter + 3]] === undefined) && (drop != selectedNameCountry) && (randomizer == 17) && (bcounter==0)){
+   if ((colors[selectedCountry[counter + 4]] === undefined) && (drop != selectedNameCountry) && (randomizer == 100) && (bcounter==0)){
        alert ("Really, how is this round still going");
        bcounter = 1;
    }
