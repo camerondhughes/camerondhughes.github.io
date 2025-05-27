@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Flag Quest</title>
+ <style>
+   body {
+     background-color: #f0f0f0;
+     font-family: Arial, sans-serif;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 30px;
+   }
+   h1 {
+     margin-bottom: 50px;
+     font-size: 100px;
+   }
+   h2 {
+     margin-top: 0;
+     font-size: 40px;
+   }
+   p {
+     max-width: 600px;
+     margin-bottom: 20px;
+     font-size: 20px;
+   }
+   button {
+     margin-top: 30px;
+     padding: 10px 20px;
+     font-size: 20px;
+     cursor: pointer;
+     border: none;
+     border-radius: 5px;
+     background-color: #4CAF50;
+     color: white;
+   }
+   button:hover {
+     background-color: #45a049;
+   }
+
+
+   /* ✅ Region Checkbox Styles */
+   .region-section {
+     margin-top: 0px;
+   }
+
+
+   .region-section p {
+     font-size: 18px;
+     margin-bottom: 20px;
+   }
+
+
+   .checkbox-row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+   }
+
+
+   .checkbox-row label {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     font-size: 16px;
+   }
+ </style>
+
+
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const regions = ['africa', 'europe', 'americas', 'asia', 'caribbean', 'oceania'];
+
+
+     regions.forEach(region => {
+       const checkbox = document.getElementById(`${region}-checkbox`);
+       checkbox.checked = false;
+       localStorage.removeItem(region);
+
+
+       if (!checkbox.checked) {
+         console.log(`false is working for ${region}`);
+       }
+
+
+       checkbox.addEventListener("change", function () {
+         if (checkbox.checked) {
+           localStorage.setItem(region, true);
+         } else {
+           localStorage.removeItem(region);
+         }
+       });
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+ <h1>Flag Quest</h1>
+ <h2>How to Play</h2>
+ <p>
+   Guess a country and with every guess you will receive a color of the flag in order from largest area to smallest. If colors have equal proportions, it is ordered from left to right, or top to bottom. You will be notified when you have all the colors. The greyscale image of the flag is your last opportunity to win, have fun!
+ </p>
+
+
+ <!-- ✅ Region Selection Section -->
+ <div class="region-section">
+   <p>Select any regions you would like to EXCLUDE from the game</p>
+   <div class="checkbox-row">
+     <label><input type="checkbox" id="africa-checkbox">Africa</label>
+     <label><input type="checkbox" id="europe-checkbox">Europe</label>
+     <label><input type="checkbox" id="americas-checkbox">Americas</label>
+     <label><input type="checkbox" id="asia-checkbox">Asia</label>
+     <label><input type="checkbox" id="caribbean-checkbox">Caribbean</label>
+     <label><input type="checkbox" id="oceania-checkbox">Oceania</label>
+   </div>
+ </div>
+
+
+ <!-- ✅ Start Button -->
+ <button onclick="window.location.replace('index.html');">Start Game</button>
+</body>
+</html>
+
+
+
+
+<!-- Africa variable -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Homepage</title>
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const checkbox = document.getElementById("africa-checkbox");
+
+
+     // ✅ Always reset checkbox and localStorage on page load
+     checkbox.checked = false;
+     localStorage.removeItem('africa'); // or use: localStorage.setItem('africa', false);
+
+
+
+
+     // ✅ Update localStorage if the user checks the box
+     checkbox.addEventListener("change", function () {
+       if (checkbox.checked) {
+         localStorage.setItem('africa', true);
+         console.log("Africa set to true");
+       } else {
+         localStorage.removeItem('africa');
+         console.log("Africa set to false");
+       }
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<!-- Europe variable -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Homepage</title>
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const checkbox = document.getElementById("europe-checkbox");
+
+
+     // ✅ Always reset checkbox and localStorage on page load
+     checkbox.checked = false;
+     localStorage.removeItem('europe'); // or use: localStorage.setItem('europe', false);
+
+
+     // ✅ Update localStorage if the user checks the box
+     checkbox.addEventListener("change", function () {
+       if (checkbox.checked) {
+         localStorage.setItem('europe', true);
+         console.log("Europe set to true");
+       } else {
+         localStorage.removeItem('europe');
+         console.log("Europe set to false");
+       }
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<!-- Americas variable -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Homepage</title>
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const checkbox = document.getElementById("americas-checkbox");
+
+
+     // ✅ Always reset checkbox and localStorage on page load
+     checkbox.checked = false;
+     localStorage.removeItem('americas');
+
+
+     // ✅ Update localStorage if the user checks the box
+     checkbox.addEventListener("change", function () {
+       if (checkbox.checked) {
+         localStorage.setItem('americas', true);
+         console.log("Americas set to true");
+       } else {
+         localStorage.removeItem('americas');
+         console.log("Americas set to false");
+       }
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<!-- Asia variable-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Homepage</title>
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const checkbox = document.getElementById("asia-checkbox");
+
+
+     // ✅ Always reset checkbox and localStorage on page load
+     checkbox.checked = false;
+     localStorage.removeItem('asia');
+
+
+     // ✅ Update localStorage if the user checks the box
+     checkbox.addEventListener("change", function () {
+       if (checkbox.checked) {
+         localStorage.setItem('asia', true);
+         console.log("Asia set to true");
+       } else {
+         localStorage.removeItem('asia');
+         console.log("Asia set to false");
+       }
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<!-- Caribbean variable-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Homepage</title>
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const checkbox = document.getElementById("caribbean-checkbox");
+
+
+     // ✅ Always reset checkbox and localStorage on page load
+     checkbox.checked = false;
+     localStorage.removeItem('caribbean');
+
+
+     // ✅ Update localStorage if the user checks the box
+     checkbox.addEventListener("change", function () {
+       if (checkbox.checked) {
+         localStorage.setItem('caribbean', true);
+         console.log("Caribbean set to true");
+       } else {
+         localStorage.removeItem('caribbean');
+         console.log("Caribbean set to false");
+       }
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<!-- Oceania variable-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Homepage</title>
+ <script>
+   document.addEventListener("DOMContentLoaded", function () {
+     const checkbox = document.getElementById("oceania-checkbox");
+
+
+     // ✅ Always reset checkbox and localStorage on page load
+     checkbox.checked = false;
+     localStorage.removeItem('oceania');
+
+
+     // ✅ Update localStorage if the user checks the box
+     checkbox.addEventListener("change", function () {
+       if (checkbox.checked) {
+         localStorage.setItem('oceania', true);
+         console.log("Oceania set to true");
+       } else {
+         localStorage.removeItem('oceania');
+         console.log("Oceania set to false");
+       }
+     });
+   });
+ </script>
+</head>
+<body>
+
+
+</body>
+</html>
