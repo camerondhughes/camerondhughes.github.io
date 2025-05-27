@@ -62,7 +62,7 @@
       "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
       "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana",
       "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran",
-      "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan",
+      "Iraq", "Ireland", "Israel", "Italy", "Ivory Coast", "Jamaica", "Japan", "Jordan", "Kazakhstan",
       "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan",
       "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein",
       "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives",
@@ -70,7 +70,7 @@
       "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco",
       "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands",
       "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway",
-      "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea",
+      "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea",
       "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar",
       "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia",
       "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
@@ -128,9 +128,52 @@
 
     <div id="squareContainer"></div>
 
-    <script src="FlagQuest.js"></script>
+    <script src="index.js"></script>
 </body>
-</html> 
+</html>
+
+<!-- homepage button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Button</title>
+  <style>
+    #home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease;
+    }
+
+    #home-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="home-button">Home</button>
+
+  <script>
+    document.getElementById("home-button").addEventListener("click", function() {
+      window.location.replace("homepage.html");
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- end homepage button -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -154,7 +197,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -181,7 +224,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -208,7 +251,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -235,7 +278,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -262,7 +305,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -289,7 +332,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -316,7 +359,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -343,7 +386,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -370,7 +413,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -397,7 +440,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -424,7 +467,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -451,7 +494,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -478,7 +521,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -505,7 +548,7 @@
 <body>
 
     <!-- JavaScript file link -->
-    <script src="FlagQuest.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -2614,6 +2657,30 @@
                         <head>
                             <meta charset="UTF-8">
                             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title> Ivory Coast Flag Generator</title>
+                            <style>
+                                .ivoryCoast-flag {
+                                    width: 150px;
+                                    height: 100px;
+                                    background-image: url('https://www.shutterstock.com/image-vector/cote-d-ivoire-flag-greyscale-260nw-2440699105.jpg');
+                                    background-size: cover;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    display: none; /* Hidden initially */
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <div class="afghanistan-flag"></div>
+                        </body>
+                        </html>
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
                             <title>Jamaica Flag Generator</title>
                             <style>
                                 .jamaica-flag {
@@ -3796,30 +3863,6 @@
                                     width: 150px;
                                     height: 100px;
                                     background-image: url('https://c8.alamy.com/comp/2WW8NAE/palau-flag-greyscale-monochrome-vector-illustration-flag-in-black-and-white-2WW8NAE.jpg');
-                                    background-size: cover;
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    display: none; /* Hidden initially */
-                                }
-                            </style>
-                        </head>
-                        <body>
-                            <div class="afghanistan-flag"></div>
-                        </body>
-                        </html>
-
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title> Palestine Flag Generator</title>
-                            <style>
-                                .palestine-flag {
-                                    width: 150px;
-                                    height: 100px;
-                                    background-image: url('https://st2.depositphotos.com/1797936/5656/i/450/depositphotos_56562463-stock-photo-illustrated-grayscale-flag-of-the.jpg');
                                     background-size: cover;
                                     position: absolute;
                                     top: 0;
@@ -5273,4 +5316,3 @@
                             <div class="afghanistan-flag"></div>
                         </body>
                         </html>
-
