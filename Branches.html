@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branches</title>
-    <link rel="stylesheet" href="Branches.css"> 
+    <link rel="stylesheet" href="branches.css"> 
 </head>
 <body>
     <div class="tree">
@@ -19,6 +20,14 @@
     <input class = "text box" type="text" id = "inputAnswer" placeholder="">
     <h4 id="number-el">0/0</h4>
     <h5 id="win-el"></h5>
+    <h5 onclick="showPopup2()">Click for Instructions</h5>
+    <div id="instructionsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup2()">&times;</span>
+            <h6>How to Play</h6>
+            <h10>Enter words that contain the keyword. For example, if the keyword is board, surfboard and boards would both be valid answers. You can see your progress below the answer box. Good Luck!</h10>
+        </div>
+    </div>
     <div id="winScreenPopup" class="popup">
         <div class="popup-content">
             <span class="close" onclick="hidePopup()">&times;</span>
@@ -27,6 +36,9 @@
             <h8 id="totalTime">Total Time: + totalTime</h8>
         </div>
     </div>
+    <script src="branches.js"></script>
+</body>
+</html>
 
     <script src="Branches.js"></script>
 </body>
